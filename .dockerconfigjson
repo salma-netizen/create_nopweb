@@ -1,0 +1,9 @@
+{
+    "auths": {
+        "https://hub.docker.com":{
+            "username":"salmastudydocker",
+            "password":"dckr_pat_KARpboPJc2-a4lFB3x2mTpVQzNM",
+            "email":"engsalmaelsayed7@gmail.com"
+    	}
+    }
+}

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nopcommerce-deployment
+  labels:
+    app: nopcommerce
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nopcommerce
+  template:
+    metadata:
+      labels:
+        app: nopcommerce
+    spec:
+      containers:
+        - name: nopcommerce
+          image: salmastudydocker/demo1:test-3.0.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: registry-nopcommerce.docker.com
